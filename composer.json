@@ -1,0 +1,22 @@
+{
+    "name": "aolr/feed-bundle",
+    "autoload": {
+        "psr-4": {
+            "Aolr\\FeedBundle\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Miles St. Leger",
+            "email": "aolr.pub@outlook.com"
+        }
+    ],
+    "require": {
+        "mongodb/mongodb": "^1.12"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}

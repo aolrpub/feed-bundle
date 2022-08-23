@@ -1,0 +1,12 @@
+<div class="timeline-activity">
+    {% for event in events %}
+        <div class="activity-log pb-2">
+            <div class="log-details">
+                <span>{{ event.un }}</span> <span class="text-primary fw-bold">{{ event.action }}</span> {{ event.info|raw }}
+            </div>
+            <p class="log-name fw-light"><small>{{ event.time }}</small></p>
+        </div>
+    {% else %}
+        <p class="fs-5 fw-bold text-muted">No feed found.</p>
+    {% endfor %}
+</div>
